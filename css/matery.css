@@ -250,7 +250,7 @@ mark {
 .bg-color {
     background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
 }
-*/
+
 .text-color {
     color: #0f9d58 !important;
 }
@@ -267,7 +267,7 @@ mark {
     background: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
     opacity: 0.8;
 }
-
+*/
 .sidenav-overlay {
     z-index: 500;
 }
