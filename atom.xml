@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://luweispace.github.io/"/>
-  <updated>2020-02-16T15:35:25.883Z</updated>
+  <updated>2020-02-16T15:37:05.629Z</updated>
   <id>http://luweispace.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>history-all</title>
+    <title>历史目录</title>
     <link href="http://luweispace.github.io/2020/02/16/history-all/"/>
     <id>http://luweispace.github.io/2020/02/16/history-all/</id>
     <published>2020-02-16T14:20:40.000Z</published>
-    <updated>2020-02-16T15:35:25.883Z</updated>
+    <updated>2020-02-16T15:37:05.629Z</updated>
     
     <summary type="html">
     
@@ -36,7 +36,7 @@
     </summary>
     
     
-      <category term="声明" scheme="http://luweispace.github.io/categories/%E5%A3%B0%E6%98%8E/"/>
+      <category term="目录" scheme="http://luweispace.github.io/categories/%E7%9B%AE%E5%BD%95/"/>
     
     
       <category term="目录" scheme="http://luweispace.github.io/tags/%E7%9B%AE%E5%BD%95/"/>
