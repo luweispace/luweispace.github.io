@@ -541,7 +541,7 @@ header .go-back i {
     line-height: 56px;
 }
 
-/* 背景图效果. */
+/* 背景图效果. 
 .bg-cover {
     position: relative;
     display: flex;
@@ -553,14 +553,33 @@ header .go-back i {
     background-position: center center;
     background-size: cover;
     transform: translate3d(0px, 0px, 0px);
+}*/
+/* 修改背景图效果.*/
+.bg-cover {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    /*height: 60vh;*/
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    background-position: center center;
+    background-size: 100%;
+    transform: translate3d(0px, 0px, 0px);
+    width:210vh; 
+    height:100vh;
 }
 
 .index-cover {
     height: 100vh;
 }
-
+/*
 .post-cover {
     height: 40vh !important;
+}*/
+/*修改后*/
+.post-cover {
+    height: 100vh !important;
 }
 
 .bg-cover:after {
@@ -906,9 +925,15 @@ article .card-image {
     background-color: #222;
     border-radius: 8px;
 }
-
+/*
 article .card-image img {
     height: 220px;
+    border-radius: 0.3rem;
+    opacity: .7;
+}*/
+/*修改后*/
+article .card-image img {
+    height: 100%;
     border-radius: 0.3rem;
     opacity: .7;
 }
@@ -1036,6 +1061,7 @@ article .article-tags .chip {
     box-shadow: 0 10px 35px 2px rgba(0, 0, 0, .15),
         0 5px 15px rgba(0, 0, 0, .07),
         0 2px 5px -5px rgba(0, 0, 0, .1) !important;
+    top: 6vh;
 }
 
 #artDetail .tag-cate {
