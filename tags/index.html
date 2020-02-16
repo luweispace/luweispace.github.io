@@ -71,31 +71,12 @@
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="" class="waves-effect waves-light">
-
+    <a href="/categories" class="waves-effect waves-light">
       
       <i class="fas fa-th" style="zoom: 0.6;"></i>
       
       <span>分类</span>
-      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
     </a>
-    <ul class="sub-nav menus_item_child ">
-      
-      <li>
-        <a href="/ios">
-          
-          <span>iOS</span>
-        </a>
-      </li>
-      
-      <li>
-        <a href="/android">
-          
-          <span>Android</span>
-        </a>
-      </li>
-      
-    </ul>
     
   </li>
   
@@ -192,32 +173,12 @@
         
         <li class="m-nav-item">
 	  
-		<a href="javascript:;">
+		<a href="/categories" class="waves-effect waves-light">
 			
-				<i class="fa-fw fas fa-th"></i>
+			    <i class="fa-fw fas fa-th"></i>
 			
 			分类
-			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
 		</a>
-            <ul  style="background:  ;" >
-              
-                <li>   
-				
-                  <a href="/ios " style="margin-left:50px";>
-				  
-		          <span>iOS</span>
-                  </a>
-                </li>
-              
-                <li>   
-				
-                  <a href="/android " style="margin-left:50px";>
-				  
-		          <span>Android</span>
-                  </a>
-                </li>
-               
-            </ul>
           
         </li>
         
@@ -391,11 +352,43 @@
             </div>
             <div class="tag-chips">
                 
+                
+                <a href="/tags/%E5%A3%B0%E6%98%8E/" title="声明: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="声明" style="background-color: #F9EBEA;">声明
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
             </div>
         </div>
     </div>
 </div>
 
+    
+    <link rel="stylesheet" type="text/css" href="/libs/jqcloud/jqcloud.css">
+<style type="text/css">
+    #tag-wordcloud {
+        width: 100%;
+        height: 300px;
+    }
+</style>
+
+<div class="container" data-aos="fade-up">
+    <div class="card">
+        <div id="tag-wordcloud" class="card-content"></div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/libs/jqcloud/jqcloud-1.0.4.min.js"></script>
+<script type="text/javascript">
+    
+
+    $('#tag-wordcloud').jQCloud([{"text":"声明","weight":1,"link":"http://luweispace.github.io/tags/声明/"}], {
+        autoResize: true
+    });
+</script>
     
 
 </main>

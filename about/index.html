@@ -71,31 +71,12 @@
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="" class="waves-effect waves-light">
-
+    <a href="/categories" class="waves-effect waves-light">
       
       <i class="fas fa-th" style="zoom: 0.6;"></i>
       
       <span>分类</span>
-      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
     </a>
-    <ul class="sub-nav menus_item_child ">
-      
-      <li>
-        <a href="/ios">
-          
-          <span>iOS</span>
-        </a>
-      </li>
-      
-      <li>
-        <a href="/android">
-          
-          <span>Android</span>
-        </a>
-      </li>
-      
-    </ul>
     
   </li>
   
@@ -192,32 +173,12 @@
         
         <li class="m-nav-item">
 	  
-		<a href="javascript:;">
+		<a href="/categories" class="waves-effect waves-light">
 			
-				<i class="fa-fw fas fa-th"></i>
+			    <i class="fa-fw fas fa-th"></i>
 			
 			分类
-			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
 		</a>
-            <ul  style="background:  ;" >
-              
-                <li>   
-				
-                  <a href="/ios " style="margin-left:50px";>
-				  
-		          <span>iOS</span>
-                  </a>
-                </li>
-              
-                <li>   
-				
-                  <a href="/android " style="margin-left:50px";>
-				  
-		          <span>Android</span>
-                  </a>
-                </li>
-               
-            </ul>
           
         </li>
         
@@ -395,13 +356,18 @@
                     <div class="post-statis col l4 hide-on-med-and-down" data-aos="zoom-in-right">
                         
 <div class="statis">
-    <span class="count"><a href="/">2</a></span>
+    <span class="count"><a href="/">1</a></span>
     <span class="name">文章</span>
 </div>
 
 
 
 
+
+<div class="statis">
+    <span class="count"><a href="/tags">1</a></span>
+    <span class="name">标签</span>
+</div>
 
 
                     </div>
@@ -415,13 +381,18 @@
                                 <div class="post-statis hide-on-large-only" data-aos="zoom-in-right">
                                     
 <div class="statis">
-    <span class="count"><a href="/">2</a></span>
+    <span class="count"><a href="/">1</a></span>
     <span class="name">文章</span>
 </div>
 
 
 
 
+
+<div class="statis">
+    <span class="count"><a href="/tags">1</a></span>
+    <span class="name">标签</span>
+</div>
 
 
                                 </div>
@@ -563,7 +534,7 @@
                 name: '文章篇数',
                 type: 'line',
                 color: ['#6772e5'],
-                data: [0,0,0,0,0,0,0,0,0,0,0,0,2],
+                data: [0,0,0,0,0,0,0,0,0,0,0,0,1],
                 markPoint: {
                     symbolSize: 45,
                     color: ['#fa755a','#3ecf8e','#82d3f4'],
@@ -629,7 +600,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: []
+                data: ["声明"]
             }
         ],
         yAxis: [
@@ -642,7 +613,7 @@
                 type: 'bar',
                 color: ['#82d3f4'],
                 barWidth : 18,
-                data: [],
+                data: [1],
                 markPoint: {
                     symbolSize: 45,
                     data: [{
