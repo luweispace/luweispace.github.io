@@ -579,7 +579,7 @@ header .go-back i {
 }*/
 /*修改后*/
 .post-cover {
-    height: 100vh !important;
+    height: 40vh !important;
 }
 
 .bg-cover:after {
