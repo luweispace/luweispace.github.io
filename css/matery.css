@@ -564,7 +564,7 @@ header .go-back i {
     border: 0;
     overflow: hidden;
     background-position: center center;
-    background-size: 100%;
+    background-size: 120%;
     transform: translate3d(0px, 0px, 0px);
     width:210vh; 
     height:100vh;
