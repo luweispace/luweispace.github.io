@@ -32,22 +32,22 @@
         max-width: 1250px;
     }
 }
-/*中等屏幕下(平板类)的样式
+/*
 body {
     background-color: #eaeaea;
     margin: 0;
     color: #34495e;
 }
 */
+/**/
 body {
-    background-image: /medias/featureimages/6.jpg;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+    background-image: /medias/featureimages/5.jpg;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position:center;
     background-size: cover;
-    margin: 0 auto;
+    margin:0 auto;
 }
-
 
 h1 {
     margin: 48px 0 22px -5px;
@@ -104,7 +104,7 @@ hr {
 blockquote {
     border-left: 5px solid #42b983;
     padding: 1rem 0.8rem 0.2rem 0.8rem;
-    color: #666;
+    color: #666;/*浅灰色透明*/
     background-color: rgba(66, 185, 131, .1);
 }
 
@@ -182,7 +182,7 @@ code {
     z-index: 1;
     filter: invert(50%);
     cursor: pointer;
-} 
+}
 
 .code-expand {
     position: absolute;
@@ -244,21 +244,27 @@ mark {
     padding: .2em;
 }
 
+
 .card {
-    border-radius: 10px;
-    box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07) !important;
+    border-radius: 10px;/*控制白色卡片外边框倒角*/
+    box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07) !important;/*添加边缘阴影效果*/
+    /*增加下面的语句，可以调节分类、标签等页面的白色卡片高度，但是影响整体的比例，*/
+    /*top:30vh;*/
 }
 
 .card .card-image img {
     border-radius: 8px 8px 0 0;
+    /* 修改文章列表图片填充样式为 cover 以覆盖整个区域而不会被缩放 */
+    object-fit: cover;
 }
 
 .container .row {
     margin-bottom: 0;
 }
 
+/*修改顶部底部的绿色为其他色*/
 .bg-color {
-    background-image: linear-gradient(to right, #FFC0CB 0%, #FF69B4 100%);
+    background-image: linear-gradient(to right, #FFB6C1 0%, #FF69B4 100%);
 }
 
 .text-color {
@@ -314,6 +320,11 @@ header .brand-logo .logo-img {
 
 header .brand-logo .logo-span {
     font-size: 2rem;
+}
+
+/*修改顶部 logo 的文字垂直对齐为 top，避免默认 middle 看起来偏下*/
+header .brand-logo .waves-effect {
+    vertical-align: top;
 }
 
 header .button-collapse i {
@@ -393,7 +404,7 @@ header .side-nav .social-link {
     font-size: 1rem;
     color: #fff;
     border: 1px solid #fff;
-    background-color: transparent;
+    background-color: rgba(000, 000, 00, 0.4);/*修改首页开始阅读按钮颜色原始值为transparent*/
     border-radius: 30px;
     box-shadow: none;
 }
@@ -554,30 +565,30 @@ header .go-back i {
     background-size: cover;
     transform: translate3d(0px, 0px, 0px);
 }*/
-/* 修改背景图效果.*/
+
+/*修改后,会导致白色卡片位置偏上，根据教程修改文章可以，但是归档等页面仍不能改变*/
 .bg-cover {
-    position: relative;
+    position: fixed;
     display: flex;
     align-items: center;
-    /*height: 60vh;*/
     padding: 0;
     border: 0;
     overflow: hidden;
     background-position: center center;
-    background-size: cover;
+    background-size: 110%;
     transform: translate3d(0px, 0px, 0px);
-    width:210vh; 
-    height:100vh;
+    width:193vh; /*控制网页背景图的左右位置*/
+    height:100vh;/*控制网页背景图的上下位置*/
 }
-
 .index-cover {
-    height: 100vh;
+    height: 100vh;/*控制首页轮播图的高度位置*/
 }
 /*
 .post-cover {
     height: 40vh !important;
-}*/
-/*修改后*/
+}
+*/
+/*修改为--控制文章背景图的高低位置*/
 .post-cover {
     height: 100vh !important;
 }
@@ -604,19 +615,28 @@ header .go-back i {
     color: #fff;
     z-index: 2;
 }
-
+/**/
 .bg-cover .title {
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 1.85em;
     margin-bottom: 20px;
     position: relative;
+    border: 1px solid #fff;
+    background-color: rgba(000, 000, 00, 0.4);/*修改首页开始阅读按钮颜色原始值为transparent*/
+    border-radius: 15px;
+    box-shadow: none;
 }
 
+/**/
 .bg-cover .description {
     font-weight: 300;
     font-size: 1.25rem;
     line-height: 1.4em;
     color: #eee;
+    border: 1px solid #fff;
+    background-color: rgba(000, 000, 00, 0.4);/*修改首页开始阅读按钮颜色原始值为transparent*/
+    border-radius: 30px;
+    box-shadow: none;
 }
 
 .bg-cover .post-title {
@@ -717,6 +737,7 @@ header .go-back i {
     }
 }
 */
+/*控制首页推荐文章卡片的位置*/
 .index-card {
     margin-top: -10px;
     padding-top: 20px;
@@ -788,6 +809,7 @@ header .go-back i {
     padding: 0 1.25rem;
 }
 
+/*控制首页“推荐文章”文字的位置*/
 .recommend .title {
     margin-top: 25px;
     margin-bottom: 25px;
@@ -880,7 +902,7 @@ header .go-back i {
 }
 
 .archive-calendar {
-    margin-top: -60px;
+    margin-top: 350px;/*归档页面日历表背景卡片的高度，原值-60*/
     max-width: 820px;
 }
 
@@ -925,14 +947,9 @@ article .card-image {
     background-color: #222;
     border-radius: 8px;
 }
-/*
+
 article .card-image img {
-    height: 220px;
-    border-radius: 0.3rem;
-    opacity: .7;
-}*/
-/*修改后*/
-article .card-image img {
+   /*文章底部卡片背景比例修复height: 220px;*/
     height: 100%;
     border-radius: 0.3rem;
     opacity: .7;
@@ -1040,7 +1057,7 @@ article .article-tags .chip {
 
 /*文章详情样式*/
 #artDetail {
-    margin-top: -60px;
+    margin-top: 50px;/*控制标签页的白色卡片高度，原值-60*/
 }
 
 /* 修改小屏幕下文章详情table样式. */
@@ -1056,12 +1073,12 @@ article .article-tags .chip {
         padding: 0 0.75rem;
     }
 }
-
+/*控制文章背景白色卡片的高低*/
 #artDetail .card {
     box-shadow: 0 10px 35px 2px rgba(0, 0, 0, .15),
         0 5px 15px rgba(0, 0, 0, .07),
         0 2px 5px -5px rgba(0, 0, 0, .1) !important;
-    /*top: 6vh;*/
+    /*top: 0vh;*/
 }
 
 #artDetail .tag-cate {
@@ -1294,7 +1311,7 @@ thead {
 }
 
 .chip-container {
-    margin-top: -60px;
+    margin-top: 350px;/*分类页白色卡片的高度控制，原值-60*/
 }
 
 .chip-container .tag-title {
@@ -1334,6 +1351,7 @@ thead {
     border-radius: 5px;
     cursor: pointer;
     box-shadow: 0 3px 5px rgba(0, 0, 0, .12);
+    z-index: 0;
 }
 
 .chip-container .chip:hover {
@@ -1356,8 +1374,8 @@ thead {
     color: #fff;
 }
 
-/* archive page. */
-#cd-timeline .year {
+/* archive page.归档页面配置 */
+#cd-timeline .year {      /*控制归档页中年份圆圈的位置*/
     position: relative;
     width: 80px;
     height: 80px;
@@ -1511,7 +1529,7 @@ thead {
     margin-left: 60px;
     padding: 0;
     border-radius: 5px;
-    background: #ffffff;
+    /*background: #ffffff;*/
     box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07) !important;
 }
 
@@ -1522,7 +1540,7 @@ thead {
 }
 
 .cd-timeline-content .card {
-    margin: 0;
+    margin: ;
 }
 
 .cd-timeline-content::before {
@@ -1596,12 +1614,12 @@ thead {
     }
 }
 
-/* about page styles. */
+/* about page styles.关于页面的布局设置*********************************************** */
 
 .about-container {
     width: 90%;
     max-width: 1225px;
-    margin-top: -60px;
+    margin-top: 440px;/*原来的数值-60，控制about页面白色背景卡片的高度位置*/
 }
 
 @media only screen and (max-width: 601px) {
@@ -1650,11 +1668,11 @@ thead {
     margin: 0 0.5rem;
     padding: 0;
     color: #fff;
-    border: 1px solid #0f9d58;
+    border: 1px solid #0f9d58;/*更改about页面四个外链图标的相对绿色圆圈的位置*/
     background: radial-gradient(#4cbf30, #0f9d58);
     font-size: 0.9rem;
     border-radius: 50%;
-    box-shadow: 0 4px 6px rgba(50, 50, 93, .21), 0 2px 3px rgba(0, 0, 0, .1);
+    box-shadow: 0 4px 6px rgba(50, 50, 93, .21), 0 2px 3px rgba(0, 0, 0, .1);/*更改6px，会使about页面作者名及以下的上移*/
 }
 
 .profile .avatar-img {
@@ -1875,11 +1893,16 @@ footer .copy-right {
 #searchModal {
     min-height: 500px;
     width: 80%;
+    background-color: rgba(0,0,0,0.8);/*新增*/
+}
+/*新增根据*/
+#searchInput {
+color: #fff;
 }
 
 #searchModal .search-header .title {
     font-size: 1.6rem;
-    color: #333;
+    color: coral;/*原始#333*/
 }
 
 #searchResult {
