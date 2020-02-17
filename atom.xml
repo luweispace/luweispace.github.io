@@ -5,9 +5,9 @@
   <subtitle>鹿维空间</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://luweispace.github.io/"/>
+  <link href="https://cdn.jsdelivr.net/gh/luweispace/luweispace.github.io/"/>
   <updated>2020-02-17T17:00:00.368Z</updated>
-  <id>http://luweispace.github.io/</id>
+  <id>https://cdn.jsdelivr.net/gh/luweispace/luweispace.github.io/</id>
   
   <author>
     <name>Mrliu</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>往期资源目录</title>
-    <link href="http://luweispace.github.io/2020/02/17/history-ziyuan/"/>
-    <id>http://luweispace.github.io/2020/02/17/history-ziyuan/</id>
+    <link href="https://cdn.jsdelivr.net/gh/luweispace/luweispace.github.io/2020/02/17/history-ziyuan/"/>
+    <id>https://cdn.jsdelivr.net/gh/luweispace/luweispace.github.io/2020/02/17/history-ziyuan/</id>
     <published>2020-02-16T17:22:46.000Z</published>
     <updated>2020-02-17T17:00:00.368Z</updated>
     
@@ -36,17 +36,17 @@
     </summary>
     
     
-      <category term="目录" scheme="http://luweispace.github.io/categories/%E7%9B%AE%E5%BD%95/"/>
+      <category term="目录" scheme="https://cdn.jsdelivr.net/gh/luweispace/luweispace.github.io/categories/%E7%9B%AE%E5%BD%95/"/>
     
     
-      <category term="目录" scheme="http://luweispace.github.io/tags/%E7%9B%AE%E5%BD%95/"/>
+      <category term="目录" scheme="https://cdn.jsdelivr.net/gh/luweispace/luweispace.github.io/tags/%E7%9B%AE%E5%BD%95/"/>
     
   </entry>
   
   <entry>
     <title>鹿维空间--说明</title>
-    <link href="http://luweispace.github.io/2020/02/16/luweispace/"/>
-    <id>http://luweispace.github.io/2020/02/16/luweispace/</id>
+    <link href="https://cdn.jsdelivr.net/gh/luweispace/luweispace.github.io/2020/02/16/luweispace/"/>
+    <id>https://cdn.jsdelivr.net/gh/luweispace/luweispace.github.io/2020/02/16/luweispace/</id>
     <published>2020-02-16T07:10:12.000Z</published>
     <updated>2020-02-17T16:59:17.766Z</updated>
     
@@ -63,10 +63,10 @@
     </summary>
     
     
-      <category term="声明" scheme="http://luweispace.github.io/categories/%E5%A3%B0%E6%98%8E/"/>
+      <category term="声明" scheme="https://cdn.jsdelivr.net/gh/luweispace/luweispace.github.io/categories/%E5%A3%B0%E6%98%8E/"/>
     
     
-      <category term="声明" scheme="http://luweispace.github.io/tags/%E5%A3%B0%E6%98%8E/"/>
+      <category term="声明" scheme="https://cdn.jsdelivr.net/gh/luweispace/luweispace.github.io/tags/%E5%A3%B0%E6%98%8E/"/>
     
   </entry>
   
