@@ -556,7 +556,7 @@ header .go-back i {
 }*/
 /* 修改背景图效果.*/
 .bg-cover {
-    position: relative;
+    position: fixed;
     display: flex;
     align-items: center;
     /*height: 60vh;*/
@@ -567,7 +567,7 @@ header .go-back i {
     background-size: cover;
     transform: translate3d(0px, 0px, 0px);
     width:210vh; 
-    height:60vh;
+    height:100vh;
 }
 
 .index-cover {
@@ -579,7 +579,7 @@ header .go-back i {
 }*/
 /*修改后*/
 .post-cover {
-    height: 40vh !important;
+    height: 100vh !important;
 }
 
 .bg-cover:after {
@@ -1061,7 +1061,7 @@ article .article-tags .chip {
     box-shadow: 0 10px 35px 2px rgba(0, 0, 0, .15),
         0 5px 15px rgba(0, 0, 0, .07),
         0 2px 5px -5px rgba(0, 0, 0, .1) !important;
-    top: 6vh;
+    /*top: 6vh;*/
 }
 
 #artDetail .tag-cate {
