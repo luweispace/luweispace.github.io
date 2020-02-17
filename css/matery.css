@@ -40,7 +40,7 @@ body {
 }
 */
 body {
-    background-image: /medias/featureimages/12.jpg;
+    background-image: /medias/featureimages/6.jpg;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -556,7 +556,7 @@ header .go-back i {
 }*/
 /* 修改背景图效果.*/
 .bg-cover {
-    position: fixed;
+    position: relative;
     display: flex;
     align-items: center;
     /*height: 60vh;*/
@@ -564,10 +564,10 @@ header .go-back i {
     border: 0;
     overflow: hidden;
     background-position: center center;
-    background-size: 100%;
+    background-size: cover;
     transform: translate3d(0px, 0px, 0px);
     width:210vh; 
-    height:100vh;
+    height:60vh;
 }
 
 .index-cover {
