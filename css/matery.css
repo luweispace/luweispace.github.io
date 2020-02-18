@@ -32,14 +32,14 @@
         max-width: 1250px;
     }
 }
-/*
+/**/
 body {
     background-color: #eaeaea;
     margin: 0;
     color: #34495e;
 }
-*/
-/**/
+
+/*
 body {
     background-image: /medias/featureimages/5.jpg;
     background-repeat:no-repeat;
@@ -47,7 +47,7 @@ body {
     background-position:center;
     background-size: cover;
     margin:0 auto;
-}
+}*/
 
 h1 {
     margin: 48px 0 22px -5px;
@@ -553,7 +553,7 @@ header .go-back i {
     line-height: 56px;
 }
 
-/* 背景图效果. 
+/* 背景图效果. */
 .bg-cover {
     position: relative;
     display: flex;
@@ -565,9 +565,9 @@ header .go-back i {
     background-position: center center;
     background-size: cover;
     transform: translate3d(0px, 0px, 0px);
-}*/
+}
 
-/*修改后,会导致白色卡片位置偏上，根据教程修改文章可以，但是归档等页面仍不能改变*/
+/*修改后,会导致白色卡片位置偏上，根据教程修改文章可以，但是归档等页面仍不能改变
 .bg-cover {
     position: fixed;
     display: flex;
@@ -576,11 +576,11 @@ header .go-back i {
     border: 0;
     overflow: hidden;
     background-position: center center;
-    background-size: 110%;
+    background-size: 100%;
     transform: translate3d(0px, 0px, 0px);
-    width:193vh; /*控制网页背景图的左右位置*/
-    height:100vh;/*控制网页背景图的上下位置*/
-}
+    width:210vh; 
+    height:100vh;
+}*/
 .index-cover {
     height: 100vh;/*控制首页轮播图的高度位置*/
 }
@@ -1079,7 +1079,7 @@ article .article-tags .chip {
     box-shadow: 0 10px 35px 2px rgba(0, 0, 0, .15),
         0 5px 15px rgba(0, 0, 0, .07),
         0 2px 5px -5px rgba(0, 0, 0, .1) !important;
-    /*top: 0vh;*/
+    top: 6vh;/**/
 }
 
 #artDetail .tag-cate {
