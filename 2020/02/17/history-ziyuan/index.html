@@ -627,33 +627,33 @@
     </div>
 
     
+        <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
+<link rel="stylesheet" href="/css/my-gitalk.css">
 
-    
-        <link rel="stylesheet" href="/libs/gitment/gitment-default.css">
-<link rel="stylesheet" href="/css/gitment.css">
-
-<div class="gitment-card card" data-aos="fade-up">
+<div class="card gitalk-card" data-aos="fade-up">
     <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; left: 20px; top: 15px; padding-bottom: 5px;">
         <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
         <span>评论</span>
     </div>
-    <div id="gitment-content" class="card-content"></div>
+    <div id="gitalk-container" class="card-content"></div>
 </div>
 
-<script src="/libs/gitment/gitment.js"></script>
+<script src="/libs/gitalk/gitalk.min.js"></script>
 <script>
-var gitment = new Gitment({
-    id: 'Mon Feb 17 2020 01:22:46 GMT+0800',
-    owner: 'luweisapce',
-    repo: 'ctsapce',
-    oauth: {
-        client_id: 'Iv1.455264b89ab98886',
-        client_secret: 'c0a30d906b51b14a08899b63308314a08af374fb'
-    }
-});
+    let gitalk = new Gitalk({
+        clientID: 'Iv1.455264b89ab98886',
+        clientSecret: 'c0a30d906b51b14a08899b63308314a08af374fb',
+        repo: 'ctsapce.github.io',
+        owner: 'luweisapce',
+        admin: "luweisapce",
+        id: '2020-02-17T01-22-46',
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    });
 
-gitment.render('gitment-content');
+    gitalk.render('gitalk-container');
 </script>
+    
+
     
 
     
