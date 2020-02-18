@@ -35,7 +35,7 @@
 /**/
 body {
     background-color: #eaeaea;
-    margin: 0;
+    margin: 0 ;
     color: #34495e;
 }
 
@@ -246,10 +246,12 @@ mark {
 
 
 .card {
-    border-radius: 10px;/*控制白色卡片外边框倒角*/
+    /*控制白色卡片外边框倒角*/
+    border-radius: 10px;
     box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07) !important;/*添加边缘阴影效果*/
     /*增加下面的语句，可以调节分类、标签等页面的白色卡片高度，但是影响整体的比例，*/
-    opacity: 0.85;/*白色卡片透明度，但是会使卡片上面的图片也有了透明度*/
+    opacity: 0.85;
+    /*白色卡片透明度，但是会使卡片上面的图片也有了透明度*/
     /*top:30vh;*/
 }
 
@@ -556,13 +558,13 @@ header .go-back i {
 /* 背景图效果. */
 .bg-cover {
     /* 原始ralative */
-    position: fixed;
+    position: ralative;
     display: flex;
     align-items: center;
     /*调整，控制背景图上下*/
     height: 100vh;
     /*添加，控制背景图左右*/
-    width:220vh;
+    width: auto;
     padding: 0;
     border: 0;
     overflow: hidden;
@@ -630,6 +632,7 @@ header .go-back i {
     font-size: 3rem;
     line-height: 1.85em;
     margin-bottom: 20px;
+    top: -10vh;/**/
     position: relative;
     /*控制首页中心大标题外框线条颜色*/
     border: 1px solid #fff;
@@ -645,11 +648,17 @@ header .go-back i {
     font-size: 1.25rem;
     line-height: 1.4em;
     color: #eee;
+    /*新增*/
+    position: relative;
+    top: -70px;
+
     border: 1px solid #fff;
     background-color: rgba(000, 000, 00, 0.4);
     /*修改首页开始阅读按钮颜色原始值为transparent*/
     border-radius: 30px;
     box-shadow: none;
+
+
 }
 
 .bg-cover .post-title {
@@ -915,7 +924,7 @@ header .go-back i {
 }
 
 .archive-calendar {
-    margin-top: 350px;/*归档页面日历表背景卡片的高度，原值-60*/
+    margin-top: -270px;/*归档页面日历表背景卡片的高度，原值-60，350*/
     max-width: 820px;
 }
 
@@ -1091,7 +1100,7 @@ article .article-tags .chip {
     box-shadow: 0 10px 35px 2px rgba(0, 0, 0, .15),
         0 5px 15px rgba(0, 0, 0, .07),
         0 2px 5px -5px rgba(0, 0, 0, .1) !important;
-    top: 6vh;/**/
+    top: -60vh;/**/
 }
 
 #artDetail .tag-cate {
@@ -1324,7 +1333,7 @@ thead {
 }
 
 .chip-container {
-    margin-top: 350px;/*分类页白色卡片的高度控制，原值-60*/
+    margin-top: -270px;/*分类页白色卡片的高度控制，原值-60 350*/
 }
 
 .chip-container .tag-title {
@@ -1632,7 +1641,7 @@ thead {
 .about-container {
     width: 90%;
     max-width: 1225px;
-    margin-top: 440px;/*原来的数值-60，控制about页面白色背景卡片的高度位置*/
+    margin-top: -240px;/*原来的数值-60，改为440控制about页面白色背景卡片的高度位置*/
 }
 
 @media only screen and (max-width: 601px) {
