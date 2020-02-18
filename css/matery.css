@@ -555,16 +555,23 @@ header .go-back i {
 
 /* 背景图效果. */
 .bg-cover {
-    position: relative;
+    /* 原始ralative */
+    position: fixed;
     display: flex;
     align-items: center;
-    height: 60vh;
+    /*调整，控制背景图上下*/
+    height: 100vh;
+    /*添加，控制背景图左右*/
+    width:220vh;
     padding: 0;
     border: 0;
     overflow: hidden;
     background-position: center center;
-    background-size: cover;
+    /*调整，控制背景图覆盖*/
+    background-size: 100%;
     transform: translate3d(0px, 0px, 0px);
+    /*控制网页背景图的层数，-1在最底层*/
+    z-index:-1;
 }
 
 /*修改后,会导致白色卡片位置偏上，根据教程修改文章可以，但是归档等页面仍不能改变
@@ -582,7 +589,8 @@ header .go-back i {
     height:100vh;
 }*/
 .index-cover {
-    height: 100vh;/*控制首页轮播图的高度位置*/
+    height: 100vh;
+    /*控制首页轮播图的高度位置*/
 }
 /*
 .post-cover {
@@ -611,19 +619,22 @@ header .go-back i {
     content: "";
 }
 
+/*首页中间大标题颜色*/
 .bg-cover .container {
     position: relative;
-    color: #fff;
+    color:  #fff;
     z-index: 2;
 }
-/**/
+/*中间大标题属性-大小-*/
 .bg-cover .title {
     font-size: 3rem;
     line-height: 1.85em;
     margin-bottom: 20px;
     position: relative;
+    /*控制首页中心大标题外框线条颜色*/
     border: 1px solid #fff;
-    background-color: rgba(000, 000, 00, 0.4);/*修改首页开始阅读按钮颜色原始值为transparent*/
+    background-color: rgba(000, 000, 00, 0.4);
+    /*修改首页开始阅读按钮颜色原始值为transparent*/
     border-radius: 15px;
     box-shadow: none;
 }
@@ -635,7 +646,8 @@ header .go-back i {
     line-height: 1.4em;
     color: #eee;
     border: 1px solid #fff;
-    background-color: rgba(000, 000, 00, 0.4);/*修改首页开始阅读按钮颜色原始值为transparent*/
+    background-color: rgba(000, 000, 00, 0.4);
+    /*修改首页开始阅读按钮颜色原始值为transparent*/
     border-radius: 30px;
     box-shadow: none;
 }
