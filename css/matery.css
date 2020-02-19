@@ -32,22 +32,12 @@
         max-width: 1250px;
     }
 }
-/**/
+/*#eaeaea*/
 body {
-    background-color: #eaeaea;
+    background-color: transparent;
     margin: 0 ;
     color: #34495e;
 }
-
-/*
-body {
-    background-image: /medias/featureimages/5.jpg;
-    background-repeat:no-repeat;
-    background-attachment:fixed;
-    background-position:center;
-    background-size: cover;
-    margin:0 auto;
-}*/
 
 h1 {
     margin: 48px 0 22px -5px;
@@ -250,8 +240,8 @@ mark {
     border-radius: 10px;
     box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07) !important;/*添加边缘阴影效果*/
     /*增加下面的语句，可以调节分类、标签等页面的白色卡片高度，但是影响整体的比例，*/
-    opacity: 0.85;
-    /*白色卡片透明度，但是会使卡片上面的图片也有了透明度*/
+    /*opacity: 0.85;
+    白色卡片透明度，但是会使卡片上面的图片也有了透明度*/
     /*top:30vh;*/
 }
 
@@ -563,17 +553,19 @@ header .go-back i {
     align-items: center;
     /*调整，控制背景图上下*/
     height: 100vh;
-    /*添加，控制背景图左右*/
-    width: auto;
+    /*添加，控制背景图左右
+    width: auto;*/
     padding: 0;
     border: 0;
     overflow: hidden;
     background-position: center center;
+    /*background-repeat: no-repeat;*/
+    /*调整，控制背景图固定*/
+    background-attachment: fixed;
     /*调整，控制背景图覆盖*/
-    background-size: 100%;
+    background-size: cover;
     transform: translate3d(0px, 0px, 0px);
     /*控制网页背景图的层数，-1在最底层*/
-    z-index:-1;
 }
 
 /*修改后,会导致白色卡片位置偏上，根据教程修改文章可以，但是归档等页面仍不能改变
@@ -1551,7 +1543,7 @@ thead {
     margin-left: 60px;
     padding: 0;
     border-radius: 5px;
-    /*background: #ffffff;*/
+    background: rgba(255, 255, 255, .0);
     box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07) !important;
 }
 
