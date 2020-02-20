@@ -560,8 +560,8 @@ header .go-back i {
     overflow: hidden;
     background-position: center center;
     /*background-repeat: no-repeat;*/
-    /*调整，控制背景图固定*/
-    background-attachment: fixed;
+    /*调整，控制背景图固定
+    background-attachment: fixed;*/
     /*调整，控制背景图覆盖*/
     background-size: cover;
     transform: translate3d(0px, 0px, 0px);
