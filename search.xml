@@ -8,7 +8,7 @@
       <link href="/331f/"/>
       <url>/331f/</url>
       
-        <content type="html"><![CDATA[<h1 id="这是一个测试图床的文档"><a href="#这是一个测试图床的文档" class="headerlink" title="这是一个测试图床的文档"></a>这是一个测试图床的文档</h1><p>成功？</p><img src="/medias/banner/lazy.gif" data-original="https://github.com/luweispace/CDN/blob/master/picgo/imgavatar.png?raw=true" alt="imgavatar.png" style="zoom: 10%;" /><p>失败？</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="这是一个测试图床的文档"><a href="#这是一个测试图床的文档" class="headerlink" title="这是一个测试图床的文档"></a>这是一个测试图床的文档</h1><p>成功？</p><img src="/medias/banner/lazy.gif" data-original="https://github.com/luweispace/CDN/blob/master/picgo/imgavatar.png?raw=true" alt="imgavatar.png" style="zoom: 20%;" /><p>失败？</p><pre class="line-numbers language-markdown"><code class="language-markdown">code {<span class="token code keyword">    padding: 1px 5px;</span><span class="token code keyword">    top: 13px !important;</span><span class="token code keyword">    font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace;</span><span class="token code keyword">    font-size: 0.91rem;</span><span class="token code keyword">    color: #e96900;</span><span class="token code keyword">    background-color: #f8f8f8;</span><span class="token code keyword">    border-radius: 2px;</span>}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>hhhh</p>]]></content>
       
       
       <categories>
